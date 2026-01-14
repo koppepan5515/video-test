@@ -19,7 +19,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 420px;
-  aspect-ratio: 16 / 9;
+  padding-top: 56.25%;
   overflow: hidden;
   background: #000;
 }
@@ -27,11 +27,11 @@ body {
 /* 動画（黒帯対策・安定版） */
 .widget video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 103%;
-  height: 103%;
-  transform: translate(-50%, -50%);
+  top: -1%;
+  left: -1%;
+  width: 102%;
+  height: 102%;
+  
   object-fit: cover;
   object-position: center top; /* 上を優先して足を守る */
   background: #000;
@@ -50,5 +50,6 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
 
 
