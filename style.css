@@ -1,6 +1,6 @@
 .widget {
   position: relative;
-  width: 100%;
+  width: 102%;
   max-width: 420px;
   height: 236px; /* 420px幅 × 16:9 = 236px */
   margin: 40px auto;
@@ -45,3 +45,4 @@
     rgba(0,0,0,0.45) 100%
   );
 }
+
