@@ -27,10 +27,10 @@ body {
 /* 動画（黒帯対策・安定版） */
 .widget video {
   position: absolute;
-  top: -1%;
-  left: -1%;
-  width: 102%;
-  height: 102%;
+  top: -2%;
+  left: -2%;
+  width: 104%;
+  height: 104%;
   
   object-fit: cover;
   object-position: center top; /* 上を優先して足を守る */
@@ -50,6 +50,7 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
 
 
 
