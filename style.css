@@ -1,17 +1,26 @@
-/* 全体リセット */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 画面中央に配置（テスト用） */
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   background: #000;
+}
+
+/* bodyはflexを使わない */
+body {
+  display: block;
+}
+
+/* ウィジェットを中央寄せ */
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 /* ウィジェット本体 */
@@ -19,38 +28,32 @@ body {
   position: relative;
   width: 100%;
   max-width: 420px;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* 16:9 */
   overflow: hidden;
   background: #000;
 }
 
-/* 動画（黒帯対策・安定版） */
+/* 動画 */
 .widget video {
   position: absolute;
   top: -2%;
   left: -2%;
   width: 104%;
   height: 104%;
-  
   object-fit: cover;
-  object-position: center top; /* 上を優先して足を守る */
-  background: #000;
+  object-position: center top;
 }
 
-/* フレーム画像（最前面） */
-.widget .frame {
+/* フレーム */
+.frame {
   position: absolute;
   inset: 0;
   z-index: 10;
   pointer-events: none;
 }
 
-.widget .frame img {
+.frame img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
-
-
-
