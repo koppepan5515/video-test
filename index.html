@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Test</title>
+  <title>Video Widget</title>
 
-  <!-- ★ キャッシュ完全回避 -->
-  <link rel="stylesheet" href="style.css?v=1000">
+  <!-- キャッシュ回避 -->
+  <link rel="stylesheet" href="style.css?v=2000">
 </head>
 <body>
 
-  <div class="widget">
+<div class="widget">
+  <div class="video-wrap">
     <video
       src="movie.mp4"
       autoplay
@@ -19,6 +20,11 @@
       loop
     ></video>
   </div>
+
+  <div class="frame">
+    <img src="frame.png" alt="">
+  </div>
+</div>
 
 </body>
 </html>
