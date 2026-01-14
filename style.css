@@ -37,7 +37,7 @@ body {
   height: 100%;
 
   object-fit: cover;
-  object-position: 45% 20%;
+  object-position: 30% 10%;
 }
 
 /* フレーム（完全一致） */
@@ -52,3 +52,4 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
