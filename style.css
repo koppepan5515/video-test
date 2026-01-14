@@ -1,29 +1,39 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Widget</title>
+/* 完全初期化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- ★ キャッシュ対策つき -->
-  <link rel="stylesheet" href="style.css?v=10">
-</head>
-<body>
+/* 画面中央に置くだけ */
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
 
-  <div class="widget">
-    <video
-      src="movie.mp4"
-      autoplay
-      muted
-      playsinline
-      loop
-    ></video>
+/* 親 */
+.widget {
+  width: 100%;
+  max-width: 420px;
 
-    <!-- フレーム -->
-    <div class="frame">
-      <img src="frame.png" alt="">
-    </div>
-  </div>
+  /* ★ 高さを確実に確保 */
+  aspect-ratio: 16 / 9;
 
-</body>
-</html>
+  background: #000;
+  overflow: hidden;
+}
+
+/* 動画：ズレようがない形 */
+.widget video {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  /* バグ回避 */
+  position: static;
+}
